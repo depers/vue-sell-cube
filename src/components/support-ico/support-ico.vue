@@ -1,10 +1,10 @@
 <template>
-  <span class="support-ico" :class="iconCls"></span>
+  <span class='support-ico' :class='iconCls'></span>
 </template>
 
 <script>
 export default {
-  name: "support-ico",
+  name: 'support-ico',
   props: {
     size: {
       type: Number
@@ -14,18 +14,18 @@ export default {
     }
   },
   computed: {
-    iconCls() {
+    iconCls () {
       const classMap = [
-        "decrease",
-        "discount",
-        "special",
-        "invoice",
-        "guarantee"
-      ];
-      return `icon-${this.size} ${classMap[this.type]}`;
+        'decrease',
+        'discount',
+        'special',
+        'invoice',
+        'guarantee'
+      ]
+      return `icon-${this.size} ${classMap[this.type]}`
     }
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>
